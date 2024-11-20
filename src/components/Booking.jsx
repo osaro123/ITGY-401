@@ -32,7 +32,7 @@ const Booking = () => {
                 }}
             >
                 <div className='relative bg-white w-[90%] max-w-lg mx-auto p-8 rounded'>
-                    <h1 className='mb-6 text-[1.424rem] font-medium'>Fill Out Your Booking Details</h1>
+                    <h1 className='mb-8 text-[1.424rem] font-medium'>Fill Out Your Booking Details</h1>
                     <div className='flex gap-1 flex-col'>
                         <label htmlFor="" className='text-[.8rem]'>Full Name</label>
                         <input type="text" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
