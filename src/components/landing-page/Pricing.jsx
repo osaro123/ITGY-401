@@ -19,7 +19,7 @@ const pricing = [
 const Pricing = () => {
   return (
     <div className='sm:mx-16 mx-8 py-[72px]'>
-        <h3 className='text-[3.157rem] font-medium mb-2 tracking-tighter'>
+        <h3 className='text-[3.157rem] font-medium mb-2 tracking-tighter max-w-xl leading-tight'>
             <AnimatedText>Affordable Cleaning Packages for Every Budget</AnimatedText>
         </h3>
     </div>

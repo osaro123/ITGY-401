@@ -34,27 +34,27 @@ const Booking = () => {
                 <div className='relative bg-white w-[90%] max-w-lg mx-auto p-8 rounded'>
                     <h1 className='mb-6 text-[1.424rem] font-medium'>Fill Out Your Booking Details</h1>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">Full Name</label>
+                        <label htmlFor="" className='text-[.8rem]'>Full Name</label>
                         <input type="text" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
                     </div>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">Email Address</label>
+                        <label htmlFor="" className='text-[.8rem]'>Email Address</label>
                         <input type="email" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
                     </div>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">Phone Number</label>
+                        <label htmlFor="" className='text-[.8rem]'>Phone Number</label>
                         <input type="tel" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
                     </div>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">Address Line 1</label>
+                        <label htmlFor="" className='text-[.8rem]'>Address Line 1</label>
                         <input type="tel" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
                     </div>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">City</label>
+                        <label htmlFor="" className='text-[.8rem]'>City</label>
                         <input type="tel" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
                     </div>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">Service</label>
+                        <label htmlFor="" className='text-[.8rem]'>Service</label>
                         <select name="" id="" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'>
                             <option value="">Basic Cleaning</option>
                             <option value="">Deep Cleaning</option>
@@ -63,7 +63,7 @@ const Booking = () => {
                         </select>
                     </div>
                     <div className='flex gap-1 flex-col'>
-                        <label htmlFor="">Date</label>
+                        <label htmlFor="" className='text-[.8rem]'>Date</label>
                         <input type="date" className='border px-4 py-2 rounded outline-none focus:border-stone-950 mb-4'/>
                     </div>
                     <button className='bg-stone-950 hover:bg-opacity-90 text-stone-100 px-3 py-1 rounded mt-4'>Book service</button>
