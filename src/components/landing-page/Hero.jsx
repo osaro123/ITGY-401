@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='mt-40'>
         <div className='max-w-3xl mx-auto text-center'>
             <h1 className='sm:text-7xl text-4xl tracking-tighter font-bold'>
-              <AnimatedText>Clean Homes, Happier Lives {"-"} Book Your Professional Cleaning Service Today!</AnimatedText>
+              <AnimatedText>Clean Homes, Happier Lives - Book Your Professional Cleaning Service Today!</AnimatedText>
             </h1>
             <p className='text-[1rem] sm:max-w-lg max-w-xs mx-auto pt-6 pb-12'>
               <AnimatedText>Discover hassle-free cleaning solutions tailored to your needs. From deep cleaning to regular maintenance, CleanSwift has you covered.</AnimatedText>
