@@ -55,7 +55,7 @@ const Services = () => {
       </p>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
         {cleaningServices.map((service, index) => (
-          <div key={index} className={`px-8 py-16 border rounded-md ${index === 3 || index === 0 ? "col-span-2" : ""}`}>
+          <div key={index} className={`px-8 py-16 border rounded-md ${index === 3 || index === 0 ? "sm:col-span-2" : ""}`}>
             <h4 className='text-2xl font-semibold'>{service.title}</h4>
             <p className='mt-2 opacity-70'>{service.description}</p>
             <ul className='mt-4 list-disc pl-4'>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='sm:px-16 px-8 bg-stone-950 text-stone-100'>
         <div className='flex justify-between items-center mb-4 py-16'>
-            <h3 className='max-w-md text-xl leading-loose'>CleanSwift is your go-to platform for hassle-free cleaning services. Book online, customize your needs, and enjoy a spotless space with the help of trusted professionals.</h3>
+            <h3 className='max-w-md hidden sm:block text-xl leading-loose'>CleanSwift is your go-to platform for hassle-free cleaning services. Book online, customize your needs, and enjoy a spotless space with the help of trusted professionals.</h3>
             <div>
                 <ul>
                     <h3 className='pb-4 opacity-60'>Sitemap</h3>
@@ -14,9 +14,9 @@ const Footer = () => {
                     <FlipLink href='' color="#111">How it works</FlipLink>
                     <FlipLink href='' color="#111">Pricing</FlipLink>
                 </ul>
-                <div>
+                {/* <div>
                     <h3></h3>
-                </div>
+                </div> */}
             </div>
         </div>
         <div className='border-t-[.1px] border-stone-50 py-8 flex justify-between items-center text-[.8rem]'>

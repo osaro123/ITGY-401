@@ -66,9 +66,9 @@ const Pricing = () => {
         <h3 className='text-[3.157rem] font-medium mb-2 tracking-tighter max-w-xl leading-tight'>
             <AnimatedText>Affordable Cleaning Packages for Every Budget</AnimatedText>
         </h3>
-        <div className="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 mt-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {pricingPlans.map((plan, index) => (
-            <div key={index} className={`border px-8 py-16 rounded ${index == 1 || index == 2 || index == 5 ? "col-span-2" : ""}`}>
+            <div key={index} className={`border px-8 py-16 rounded ${index == 1 || index == 2 || index == 5 ? "sm:col-span-2" : ""}`}>
                 <h4 className="text-md opacity-60 pb-2">{plan.title}</h4>
                 <p className="text-2xl font-bold">{plan.price}</p>
                 <ul className="mt-4 list-disc list-inside">
