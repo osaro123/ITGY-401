@@ -9,8 +9,8 @@ const Login = () => {
     navigate("/dashboard")
   }
   return (
-    <div className='grid grid-cols-2'>
-      <div className=''>
+    <div className='grid grid-cols-1 place-content-center sm:grid-cols-2'>
+      <div className='hidden sm:block'>
         <img src={img0} alt="login-image" className='h-screen w-full'/>
       </div>
       <div className='flex flex-col justify-between py-4'>
