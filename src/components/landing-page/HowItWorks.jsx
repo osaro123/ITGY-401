@@ -18,11 +18,11 @@ const howItWorks = [
 
 const HowItWorks = () => {
   return (
-    <div className='sm:mx-16 mx-8 py-[72px]'>
+    <section id='how-it-works' className='sm:mx-16 mx-8 py-[72px]'>
         <h3 className='text-[3.157rem] font-medium mb-2 tracking-tighter'>
             <AnimatedText>How CleanSwift Works</AnimatedText>
         </h3>
-    </div>
+    </section>
   )
 }
 

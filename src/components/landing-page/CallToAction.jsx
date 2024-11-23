@@ -1,9 +1,10 @@
 import React from 'react'
 import AnimatedText from '../AnimatedText'
+import { BiUpArrow } from 'react-icons/bi'
 
 const CallToAction = () => {
   return (
-    <div className='sm:mx-16 mx-8 py-32'>
+    <div className='relative sm:mx-16 mx-8 py-32'>
         <h3 className='text-[3.157rem] font-medium tracking-tighter text-center'>
             <AnimatedText>Ready for a Cleaner Space?</AnimatedText>
         </h3>

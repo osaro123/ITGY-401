@@ -46,14 +46,14 @@ const Services = () => {
   ];
 
   return (
-    <div className='sm:mx-16 mx-8 py-[72px]'>
+    <section id='services' className='sm:mx-16 mx-8 py-[72px]'>
       <h3 className='text-[3.157rem] font-medium tracking-tighter'>
         <AnimatedText>Our Cleaning Services</AnimatedText>
       </h3>
       <p className='opacity-60 max-w-sm'>
         <AnimatedText>Choose from a variety of tailored cleaning packages designed to meet your needs.</AnimatedText>
       </p>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
+      {/* <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
         {cleaningServices.map((service, index) => (
           <div key={index} className={`px-8 py-16 border rounded-md ${index === 3 || index === 0 ? "sm:col-span-2" : ""}`}>
             <h4 className='text-2xl font-semibold'>{service.title}</h4>
@@ -65,8 +65,15 @@ const Services = () => {
             </ul>
           </div>
         ))}
+      </div> */}
+      <div className='mt-16'>
+        {cleaningServices.map((service,index) => (
+          <div key={index} className={`border-b-[1px] py-12 ${index == 0 ? "border-t-[1px]" : ""}`}>
+            <h3 className='text-[2.369rem] sm:text-[1.777rem] hover:opacity-60 hover:translate-x-2 transition-all'>{service.title}</h3>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

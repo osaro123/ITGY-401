@@ -4,10 +4,10 @@ import Hero from './Hero'
 
 const Header = () => {
   return (
-    <div className='min-h-screen'>
+    <header className='min-h-screen' id='header'>
         <Navbar/>
         <Hero/>
-    </div>
+    </header>
   )
 }
 

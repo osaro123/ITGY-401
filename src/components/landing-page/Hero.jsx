@@ -3,7 +3,8 @@ import AnimatedText from '../AnimatedText'
 
 const Hero = () => {
   return (
-    <div className='mt-40'>
+    <section id='hero' className='mt-40'>
+      <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
         <div className='max-w-3xl mx-auto text-center'>
             <h1 className='sm:text-7xl text-4xl tracking-tighter font-bold'>
               <AnimatedText>Clean Homes, Happier Lives - Book Your Professional Cleaning Service Today!</AnimatedText>
@@ -16,7 +17,7 @@ const Hero = () => {
                 <button>View Packages</button>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

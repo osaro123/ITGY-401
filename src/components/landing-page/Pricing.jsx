@@ -1,85 +1,103 @@
 import React from 'react'
 import AnimatedText from '../AnimatedText'
+import Card from '../Card';
 
 const pricingPlans = [
-    {
-      title: "Basic Cleaning",
-      price: "$50 / Session",
-      features: [
-        "Regular maintenance cleaning",
-        "Dusting, vacuuming, mopping",
-        "Trash removal"
-      ]
+  {
+    title: "Basic Cleaning",
+    price: "$50 / Session",
+    features: [
+      "Regular maintenance cleaning",
+      "Dusting, vacuuming, mopping",
+      "Trash removal",
+    ],
+    color: {
+      primaryColor: "#f5e9e7", // Soft peach
+      textColor: "#5a2e2a",    // Deep brown
     },
-    {
-      title: "Deep Cleaning",
-      price: "$120 / Session",
-      features: [
-        "Comprehensive cleaning",
-        "Scrubbing and tough stain removal",
-        "Appliance cleaning"
-      ]
+  },
+  {
+    title: "Deep Cleaning",
+    price: "$120 / Session",
+    features: [
+      "Comprehensive cleaning",
+      "Scrubbing and tough stain removal",
+      "Appliance cleaning",
+    ],
+    color: {
+      primaryColor: "#e8e0ff", // Soft lavender
+      textColor: "#483d8b",    // Deep purple
     },
-    {
-      title: "Move-In/Move-Out Cleaning",
-      price: "$150 / Session",
-      features: [
-        "Ideal for transitions",
-        "Deep cleaning of empty spaces",
-        "Sanitizing and detailed scrubbing"
-      ]
+  },
+  {
+    title: "Move-In/Move-Out Cleaning",
+    price: "$150 / Session",
+    features: [
+      "Ideal for transitions",
+      "Deep cleaning of empty spaces",
+      "Sanitizing and detailed scrubbing",
+    ],
+    color: {
+      primaryColor: "#e5e6f7", // Light periwinkle
+      textColor: "#2c2d55",    // Navy blue
     },
-    {
-      title: "Office Cleaning",
-      price: "Custom Quote",
-      features: [
-        "Tailored for workspaces",
-        "Regular maintenance or deep cleaning",
-        "Flexible scheduling to fit your office hours"
-      ]
+  },
+  {
+    title: "Office Cleaning",
+    price: "Custom Quote",
+    features: [
+      "Tailored for workspaces",
+      "Regular maintenance or deep cleaning",
+      "Flexible scheduling to fit your office hours",
+    ],
+    color: {
+      primaryColor: "#f2f7e9", // Light sage
+      textColor: "#3e5231",    // Olive green
     },
-    {
-      title: "Event Cleanup",
-      price: "$80+ / Event",
-      features: [
-        "Post-event tidying",
-        "Trash collection and floor cleaning",
-        "Restoring order after events"
-      ]
+  },
+  {
+    title: "Event Cleanup",
+    price: "$80+ / Event",
+    features: [
+      "Post-event tidying",
+      "Trash collection and floor cleaning",
+      "Restoring order after events",
+    ],
+    color: {
+      primaryColor: "#f4e8fc", // Soft lilac
+      textColor: "#5a2a6d",    // Plum purple
     },
-    {
-      title: "Specialized Cleaning",
-      price: "Custom Quote",
-      features: [
-        "Carpet and upholstery cleaning",
-        "Eco-friendly options available",
-        "Tailored services for unique needs"
-      ]
-    }
-  ];
+  },
+  {
+    title: "Specialized Cleaning",
+    price: "Custom Quote",
+    features: [
+      "Carpet and upholstery cleaning",
+      "Eco-friendly options available",
+      "Tailored services for unique needs",
+    ],
+    color: {
+      primaryColor: "#f6f2e2", // Light cream
+      textColor: "#594830",    // Warm brown
+    },
+  },
+];
+
   
   
 
 const Pricing = () => {
   return (
-    <div className='sm:mx-16 mx-8 py-[72px]'>
-        <h3 className='text-[3.157rem] font-medium mb-2 tracking-tighter max-w-xl leading-tight'>
+    <section id='pricing' className='sm:mx-16 mx-8 py-[72px] mt-4'>
+        <h3 className='text-[3.157rem] font-medium mb-2 tracking-tighter max-w-xl leading-none'>
             <AnimatedText>Affordable Cleaning Packages for Every Budget</AnimatedText>
         </h3>
-        <div className="grid gap-4 mt-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 mt-8 grid-cols-1">
             {pricingPlans.map((plan, index) => (
-            <div key={index} className={`border px-8 py-16 rounded ${index == 1 || index == 2 || index == 5 ? "sm:col-span-2" : ""}`}>
-                <h4 className="text-md opacity-60 pb-2">{plan.title}</h4>
-                <p className="text-2xl font-bold">{plan.price}</p>
-                <ul className="mt-4 list-disc list-inside">
-                {plan.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                ))}
-                </ul>
-            </div>
+              <Card plan={plan} index={index}/>
             ))}
         </div>
-    </div>
+    </section>
   )
 }
 
