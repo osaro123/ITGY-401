@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import AnimatedText from '../AnimatedText'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
                         <h3 className='pb-4 opacity-60'>Sitemap</h3>
                         <FlipLink href='#about' color="#111">About</FlipLink>
                         <FlipLink href='#services' color="#111">Services</FlipLink>
-                        <FlipLink href='#how-it-works' color="#111">How it works</FlipLink>
+                        <FlipLink href='#faqs' color="#111">FAQs</FlipLink>
                         <FlipLink href='#pricing' color="#111">Pricing</FlipLink>
                     </ul>
                     {/* <div>
@@ -27,7 +28,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className='border-t-[.1px] border-stone-50 py-8 flex justify-between items-center text-[.8rem]'>
-                <h3 className='font-semibold text-[1.1rem]'>CleanSwift</h3>
+                <h3 className='font-semibold text-[1.1rem]'>
+                    <a href="#header">CleanSwift</a>
+                </h3>
                 <p>Copyright &copy; 2024 CleanSwift</p>
             </div>
         </div>

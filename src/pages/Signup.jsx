@@ -1,17 +1,22 @@
 import React from 'react'
 import img2 from "../assets/img2.jpg"
 import { Link, useNavigate } from 'react-router-dom'
+import { toast, Toaster } from 'sonner'
 
 const Signup = () => {
   const navigate = useNavigate()
   const handleSubmit = (event) => {
     event.preventDefault()
+    // setTimeout(() => {
+    //   toast.success("Registered successfully")
+    // },2000)
     navigate("/login")
   }
   return (
     <div className='grid grid-cols-2'>
       <div className=''>
         <img src={img2} alt="login-image" className='h-screen w-full'/>
+        {/* <Toaster position='top-right' richColors/> */}
       </div>
       <div className='flex flex-col justify-between py-4'>
         <Link to={"/"} className='text-center font-semibold'>CleanSwift</Link>

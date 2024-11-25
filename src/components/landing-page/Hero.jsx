@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimatedText from '../AnimatedText'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -12,9 +13,9 @@ const Hero = () => {
             <p className='text-[1rem] sm:max-w-lg max-w-xs mx-auto pt-6 pb-12'>
               <AnimatedText>Discover hassle-free cleaning solutions tailored to your needs. From deep cleaning to regular maintenance, CleanSwift has you covered.</AnimatedText>
             </p>
-            <div className='flex gap-4 justify-center'>
-                <button className='bg-stone-950 text-stone-100 px-3 py-1 rounded'>Book Now</button>
-                <button>View Packages</button>
+            <div className='flex gap-4 justify-center items-center'>
+                <Link to={"/login"} className='bg-stone-950 text-stone-100 px-3 py-1 rounded'>Book Now</Link>
+                <a href='#pricing'>View Packages</a>
             </div>
         </div>
     </section>
