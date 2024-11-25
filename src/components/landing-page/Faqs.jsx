@@ -29,7 +29,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className='sm:mx-16 mx-8 py-[72px] grid sm:grid-cols-2 grid-cols-1 place-content-center'>
+    <section id='faqs' className='sm:mx-16 mx-8 py-[72px] grid sm:grid-cols-2 grid-cols-1 place-content-center'>
       <div>
         <h3 className='text-[3.157rem] font-medium tracking-tighter max-w-md leading-none mb-4'>
           <AnimatedText>Frequently Asked Questions</AnimatedText>
