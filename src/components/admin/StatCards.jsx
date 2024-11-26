@@ -13,14 +13,14 @@ const StatCards = () => {
       />
       <Card
         title="Expenses"
-        value="₦8,500"
+        value="₦86,500"
         pillText="5% decrease"
         trend="down"
         period="Last 30 days"
       />
       <Card
         title="Net Profit"
-        value="₦3,500"
+        value="₦300,500"
         pillText="7% increase"
         trend="up"
         period="Last 30 days"

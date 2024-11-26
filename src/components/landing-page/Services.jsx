@@ -72,7 +72,7 @@ const Services = () => {
           </div>
         ))}
       </div> */}
-      <div className='mt-16 flex gap-4 overflow-x-scroll'>
+      <div className='mt-16 flex sm:flex-row flex-col gap-4 overflow-x-scroll'>
         {cleaningServices.map((service,index) => (
           <div key={index} className={`py-6`}>
             <img src={service.img} alt="service" className='h-[550px] w-[750px] mb-4 transition-transform duration-300 transform hover:scale-95 grayscale hover:grayscale-0' />
