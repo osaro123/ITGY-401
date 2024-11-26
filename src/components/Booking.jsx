@@ -6,7 +6,7 @@ import { toast, Toaster } from 'sonner';
 import { PaystackButton } from 'react-paystack';
 
 const Booking = () => {
-  const publicKey = import.meta.env.REACT_APP_PAYSTACK_PUBLIC_KEY || ''; // Fetch Paystack public key from environment variables
+  const publicKey = "pk_test_2bd4d703659c61a7f47fa4f7125a83d664601e0d"; // Fetch Paystack public key from environment variables
   const [bookingModal, setBookingModal] = useState(false);
 
   // Map of services to prices
@@ -16,6 +16,8 @@ const Booking = () => {
     "Office Cleaning": 15000,
     "Customized Cleaning": 20000,
   };
+
+  const today = new Date().toISOString().slice(0, 16)
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -52,7 +54,6 @@ const Booking = () => {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    addBooking(formData);
     setFormData({
       fullName: '',
       email: '',
@@ -64,7 +65,7 @@ const Booking = () => {
       date: '',
     });
     setBookingModal(false);
-    toast.success('Successfully added booking');
+    // toast.success('Successfully added booking');
   };
 
   const componentProps = {
@@ -78,6 +79,7 @@ const Booking = () => {
     text: 'Pay Now',
     onSuccess: () => {
       toast.success('Payment successful! Your booking has been confirmed.');
+      addBooking(formData);
       setBookingModal(false);
     },
     onClose: () => toast.error('Payment process was cancelled.'),
@@ -121,7 +123,7 @@ const Booking = () => {
                 { label: 'Phone Number', name: 'phone', type: 'tel' },
                 { label: 'Address Line 1', name: 'address', type: 'text' },
                 { label: 'City', name: 'city', type: 'text' },
-                { label: 'Date', name: 'date', type: 'date' },
+                { label: 'Date', name: 'datetime', type: 'datetime-local' },
               ].map(({ label, name, type }) => (
                 <div className="flex gap-1 flex-col" key={name}>
                   <label htmlFor={name} className="text-[.8rem]">
@@ -135,6 +137,7 @@ const Booking = () => {
                     value={formData[name]}
                     onChange={handleChange}
                     required
+                    min={today}
                   />
                 </div>
               ))}

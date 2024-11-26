@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from "../assets/img2.jpg"
+import img1 from "../assets/img1.jpg"
 import { Link, useNavigate } from 'react-router-dom'
 import { toast, Toaster } from 'sonner'
 
@@ -14,8 +14,8 @@ const Signup = () => {
   }
   return (
     <div className='grid grid-cols-2'>
-      <div className=''>
-        <img src={img2} alt="login-image" className='h-screen w-full'/>
+      <div className='hidden sm:block'>
+        <img src={img1} alt="login-image" className='h-screen w-full'/>
         {/* <Toaster position='top-right' richColors/> */}
       </div>
       <div className='flex flex-col justify-between py-4'>
