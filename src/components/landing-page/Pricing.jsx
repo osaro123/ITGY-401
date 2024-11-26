@@ -5,7 +5,7 @@ import Card from '../Card';
 const pricingPlans = [
   {
     title: "Basic Cleaning",
-    price: "$50 / Session",
+    price: "₦50,000 / Session",
     features: [
       "Regular maintenance cleaning",
       "Dusting, vacuuming, mopping",
@@ -18,7 +18,7 @@ const pricingPlans = [
   },
   {
     title: "Deep Cleaning",
-    price: "$120 / Session",
+    price: "₦12,0000 / Session",
     features: [
       "Comprehensive cleaning",
       "Scrubbing and tough stain removal",
@@ -31,7 +31,7 @@ const pricingPlans = [
   },
   {
     title: "Move-In/Move-Out Cleaning",
-    price: "$150 / Session",
+    price: "₦150,000 / Session",
     features: [
       "Ideal for transitions",
       "Deep cleaning of empty spaces",
@@ -53,19 +53,6 @@ const pricingPlans = [
     color: {
       primaryColor: "#f2f7e9", // Light sage
       textColor: "#3e5231",    // Olive green
-    },
-  },
-  {
-    title: "Event Cleanup",
-    price: "$80+ / Event",
-    features: [
-      "Post-event tidying",
-      "Trash collection and floor cleaning",
-      "Restoring order after events",
-    ],
-    color: {
-      primaryColor: "#f4e8fc", // Soft lilac
-      textColor: "#5a2a6d",    // Plum purple
     },
   },
   {

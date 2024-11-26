@@ -1,11 +1,14 @@
 import React from 'react';
 import AnimatedText from '../AnimatedText';
+import img0 from "../../assets/img0.jpg"
+import img1 from "../../assets/img1.jpg"
 
 const Services = () => {
   const cleaningServices = [
     {
       title: "Basic Cleaning",
       description: "Efficient cleaning services for daily upkeep.",
+      img: img0,
       features: [
         "Dusting and vacuuming",
         "Mopping floors",
@@ -16,6 +19,7 @@ const Services = () => {
     {
       title: "Deep Cleaning",
       description: "Thorough cleaning for a fresh and hygienic space.",
+      img: img1,
       features: [
         "Detailed scrubbing of bathrooms and kitchens",
         "Cleaning behind appliances",
@@ -26,6 +30,7 @@ const Services = () => {
     {
       title: "Move-In/Move-Out Cleaning",
       description: "Get a spotless space when moving in or out.",
+      img: img0,
       features: [
         "Deep cleaning of empty spaces",
         "Sanitizing bathrooms and kitchens",
@@ -36,6 +41,7 @@ const Services = () => {
     {
       title: "Office Cleaning",
       description: "Keep your workspace clean and productive.",
+      img: img1,
       features: [
         "Dusting desks and equipment",
         "Emptying bins and restocking supplies",
@@ -66,10 +72,12 @@ const Services = () => {
           </div>
         ))}
       </div> */}
-      <div className='mt-16'>
+      <div className='mt-16 flex gap-4 overflow-x-scroll'>
         {cleaningServices.map((service,index) => (
-          <div key={index} className={`border-b-[1px] py-12 ${index == 0 ? "border-t-[1px]" : ""}`}>
-            <h3 className='text-[2.369rem] sm:text-[1.777rem] hover:opacity-60 hover:translate-x-2 transition-all'>{service.title}</h3>
+          <div key={index} className={`py-6`}>
+            <img src={service.img} alt="service" className='h-[550px] w-[750px] mb-4 transition-transform duration-300 transform hover:scale-95 grayscale hover:grayscale-0' />
+            <h3 className='text-[1rem] sm:text-[1rem]'>{service.title}</h3>
+            <p className='opacity-60 text-[.9rem]'>{service.description}</p>
           </div>
         ))}
       </div>
